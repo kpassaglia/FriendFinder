@@ -23,3 +23,9 @@ app.listen(PORT, function() {
     console.log("App listening on PORT " + PORT);
     console.log("Server listening on: http://localhost:" + PORT);
   });
+
+  //test
+
+//   app.get("/", function(req, res) {
+//     res.sendFile(path.join(__dirname, "home.html"));
+//   });
