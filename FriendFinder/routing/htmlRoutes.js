@@ -1,8 +1,9 @@
-// GET route
-app.get('/survey', function (req, res) {
-    res.send('GET request to the survey')
-  })
+console.log("Html Routes Loaded")
+// Routes
+//     app.get("/survey", function (req, res) {
+//     res.sendFile(path.join(__dirname, "/public/survey.html"))
+//   })
 
-  app.get("/", function(req, res) {
-    res.sendFile(path.join(__dirname, "home.html"));
-  });
+//   app.get("/", function(req, res) {
+//     res.sendFile(path.join(__dirname, "/public/home.html"));
+//   });
