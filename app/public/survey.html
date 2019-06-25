@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FriendFinder</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Compatability Quiz</h1>
+        <hr>
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name">
+        </div>
+
+        <div class="form-group">
+            <label for="photo">Photo (URL)</label>
+            <input type="url" class="form-control" id="photo">
+        </div>
+        <br>
+        <div class="card-header">
+            Respond to each of the following statements with a number (5 Being Strongly Agree and 1 Strongly Disagree)
+        </div>
+        <br>
+        <!-- Question 1 -->
+        <p>1) My Mind is always buzzing with unexplored ideas and plans.</p>
+        <select class="chosen-select" id="q1">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <br>
+        <br>
+        <!-- Question 2 -->
+        <p>2) I would love to go to space if I could.</p>
+        <select class="chosen-select" id="q2">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <br>
+        <br>
+        <!-- Question 3 -->
+        <p>3) I can eat a whole pizza in one sitting.</p>
+        <select class="chosen-select" id="q3">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <br>
+        <br>
+        <!-- Question 4 -->
+        <p>4) Summer is my favorite season.</p>
+        <select class="chosen-select" id="q4">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <br>
+        <br>
+        <!-- Question 5 -->
+        <p>5) Tottenham Hotspur are the best team in the EPL.</p>
+        <select class="chosen-select" id="q5">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <br>
+        <br>
+        <!-- Question 6 -->
+        <p>6) I prefer mountains over beaches.</p>
+        <select class="chosen-select" id="q6">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <br>
+        <br>
+        <!-- Question 7 -->
+        <p>7) I'd rather go to a music concert rather than a sporting event.</p>
+        <select class="chosen-select" id="q7">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <br>
+        <br>
+        <!-- Question 8 -->
+        <p>8) Travel is a priority in my life.</p>
+        <select class="chosen-select" id="q8">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <br>
+        <br>
+        <!-- Question 9 -->
+        <p>9) Gratefull dead has some of the best tracks around.</p>
+        <select class="chosen-select" id="q9">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <br>
+        <br>
+        <!-- Question 10 -->
+        <p>10) Steak is far supirior to any type of fish.</p>
+        <select class="chosen-select" id="q10">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <br>
+        <br>
+        <!-- Submit Button -->
+        <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle"
+                aria-hidden="true"></i>
+            Let's Do This! </button>
+        <hr>
+        <!-- Modal -->
+        <div id="resultsModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">X</button>
+                        <h2 class="modal-title"><strong>Your most compatible friend</strong></h2>
+                    </div>
+                    <div class="modal-body">
+                        <h2 id="matchName"></h2>
+                        <img id="matchImg" src="" alt="" height="350" width="300">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" id="closeModal"
+                            data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <p><a href="/api/friends">API Friends List</a> | <a
+                        href="https://github.com/kpassaglia/FriendFinder">GitHub Repo</a></p>
+            </div>
+        </footer>
+    </div>
+
+
+    <script type="text/javascript">
+        var currentURL = window.location.origin;
+
+
+        $("#submit").on("click", function () {
+
+            if (($('#name').val().trim() !== "") && ($('#photo').val().trim() !== "")) {
+                // Create an object for the user's data
+                var userData = {
+                    name: $("#name").val(),
+                    photo: $("#photo").val(),
+                    scores: [
+                        $("#q1").val(),
+                        $("#q2").val(),
+                        $("#q3").val(),
+                        $("#q4").val(),
+                        $("#q5").val(),
+                        $("#q6").val(),
+                        $("#q7").val(),
+                        $("#q8").val(),
+                        $("#q9").val(),
+                        $("#q10").val()
+                    ]
+                }
+
+                // AJAX post the data to the friends API.
+                $.post(currentURL + "/api/friends", userData, function (data) {
+                    $("#matchName").text(data.name);
+                    $('#matchImg').attr("src", data.photo);
+                    $("#resultsModal").modal('toggle');
+                    $("#name").val("");
+                    $("#photo").val("");
+                });
+            } else {
+                $(".modal-title").text("Missing required information");
+                $(".modal-body").html("<h3>Please complete the form before submitting</h3>");
+                $("#resultsModal").modal('toggle');
+            }
+            return false;
+        });
+
+        // modal logic
+        $('#closeModal').click(function () {
+            $.get('/', function (req, res) {
+                location.replace(res);
+            })
+        });
+    </script>
+</body>
+
+</html>
